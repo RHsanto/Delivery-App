@@ -13,6 +13,7 @@ export default function Details(){
     {/* start main view */}
     <View>
      <Image style={{height:200}} source={require('../../assets/image/Media.jpg')} />
+     
 {/* start price Container view */}
     <View style={styles.priceContainer}>
       <View style={styles.textView}>
@@ -36,6 +37,7 @@ export default function Details(){
        <AntDesign name="hearto" size={20} style={{color:colors.grey}}/>
        </Pressable>
      </View>
+     {/* here start cart btn */}
       <View>
         <Pressable style={styles.cartBtn} onPress={()=>{
           alert('function not add')

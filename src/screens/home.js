@@ -33,7 +33,7 @@ export default function Home({navigation}){
     </View>
     <View >
       <Text preset="h4" style={{color:colors.grey,textAlign:'center',
-        textTransform: 'uppercase'}}>dismiss</Text>
+        textTransform: 'uppercase',paddingBottom:spacing[10]}}>dismiss</Text>
     </View>
      
     
