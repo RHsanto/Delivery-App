@@ -4,7 +4,7 @@ import { colors } from "../theme/color";
 import { spacing } from "../theme/spacing";
 
 
-export default function Home(){
+export default function Home({navigation}){
   return (
     <SafeAreaView>
       <ScrollView>
@@ -24,7 +24,7 @@ export default function Home(){
          {/* button  */}
     <View style={styles.orderBtn} >
     <Pressable onPress={()=>{
-      alert('HEllo')
+     navigation.navigate('Details')
     }}>
         <Text preset="h4" style={{color:colors.white,textAlign:'center',
         textTransform: 'uppercase'}}>order now</Text>
