@@ -3,14 +3,15 @@ import Text from "../components/text/text";
 import { colors } from "../theme/color";
 import { spacing } from "../theme/spacing";
 
-import { typography } from "../theme/typography";
 
 export default function Home(){
   return (
     <SafeAreaView>
       <ScrollView>
       <View style={styles.container}>
-       <View style={styles.logoView}><Text style={styles.logo}>D</Text></View>
+       <View style={styles.logoView}>
+        <Text style={styles.logo}>D</Text>
+      </View>
       <View style={styles.orderView}>
         <View style={styles.imageView}>
           <Image style={{marginHorizontal:spacing[8],marginVertical:spacing[7]}}  source={require('../../assets/image/Vector.jpg')} />
@@ -21,11 +22,20 @@ export default function Home(){
        </Text>
        
          {/* button  */}
-    <View style={styles.orderBtn}>
-    <Pressable >
-        <Text preset="h4" style={{color:colors.white,textAlign:'center'}}>order now</Text>
+    <View style={styles.orderBtn} >
+    <Pressable onPress={()=>{
+      alert('HEllo')
+    }}>
+        <Text preset="h4" style={{color:colors.white,textAlign:'center',
+        textTransform: 'uppercase'}}>order now</Text>
     </Pressable>
     </View>
+    <View >
+      <Text preset="h4" style={{color:colors.grey,textAlign:'center',
+        textTransform: 'uppercase'}}>dismiss</Text>
+    </View>
+     
+    
     </View>
      
      </View>
@@ -38,7 +48,6 @@ export default function Home(){
 
 const styles=StyleSheet.create({
   container:{
-    flex:1,
     backgroundColor:colors.purple,
   },
   logoView:{
@@ -57,7 +66,7 @@ const styles=StyleSheet.create({
   
   },
   orderView:{ 
-    marginTop:spacing[5],
+    marginTop:spacing[10],
     backgroundColor:colors.deepWhite,
     borderTopLeftRadius:30,
     borderTopRightRadius:30,
@@ -81,7 +90,7 @@ const styles=StyleSheet.create({
     width:'90%',
     backgroundColor:colors.green,
     padding:spacing[5],
-    marginTop:spacing[6],
+    marginVertical:spacing[10],
     textAlign:'center',
     borderRadius:10
  
