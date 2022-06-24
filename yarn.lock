@@ -1062,6 +1062,11 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     "to-fast-properties" "^2.0.0"
 
+"@expo-google-fonts/source-sans-pro@^0.2.2":
+  "integrity" "sha512-EkHtxMkWMnuB7PzvC/OgAN27P7OqC2ephS97rWrXDeWmuzQ2sPPMT8mVlo/X6U5Z/oXpWYwh59GB5qPnJc0GgQ=="
+  "resolved" "https://registry.npmjs.org/@expo-google-fonts/source-sans-pro/-/source-sans-pro-0.2.2.tgz"
+  "version" "0.2.2"
+
 "@expo/bunyan@^4.0.0", "@expo/bunyan@4.0.0":
   "integrity" "sha512-Ydf4LidRB/EBI+YrB+cVLqIseiRfjUI/AeHBgjGMtq3GroraDu81OV7zqophRgupngoL3iS3JUMDMnxO7g39qA=="
   "resolved" "https://registry.npmjs.org/@expo/bunyan/-/bunyan-4.0.0.tgz"
