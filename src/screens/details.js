@@ -33,7 +33,7 @@ export default function Details(){
     </View>
       <View style={styles.cartBtn}>
         <AntDesign name="shoppingcart" size={20} color="white" />
-        <Text preset="h4">add to cart</Text>
+        <Text preset="h4" style={{color:colors.white, textTransform: 'uppercase',marginLeft:15}}>add to cart</Text>
         </View>
     </View>
  
