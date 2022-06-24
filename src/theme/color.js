@@ -6,6 +6,7 @@ export const colors ={
   green:'#0BCE83',
   violet:'#2D0C57',
   lightGreen:'#CDFFB6',
-  grey:'#9586A8'
+  grey:'#9586A8',
+  logoColor:'#8C33FF',
 
 }
