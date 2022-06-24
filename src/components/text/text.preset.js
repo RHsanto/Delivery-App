@@ -11,6 +11,7 @@ const BASE ={
 const BOLD ={
   fontFamily:typography.primaryBold,
   color:colors.violet,
+ 
 }
 
 export const presets ={
@@ -19,10 +20,12 @@ export const presets ={
   h1:{
     ...BOLD,
     fontSize:34,
+   
   },
   h2:{
     ...BOLD,
     fontSize:30,
+   
   },
   h3:{
     ...BOLD,
