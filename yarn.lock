@@ -1062,6 +1062,11 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     "to-fast-properties" "^2.0.0"
 
+"@expo-google-fonts/lobster@^0.2.2":
+  "integrity" "sha512-1GYR9pxBUkPCejijESrqSYC0GYLz+kW7hZQDDJ0L7g3P+ghHmYidE9NVqdiUbB6fWJKIgkVIXqFz0ZXIagCkBA=="
+  "resolved" "https://registry.npmjs.org/@expo-google-fonts/lobster/-/lobster-0.2.2.tgz"
+  "version" "0.2.2"
+
 "@expo-google-fonts/source-sans-pro@^0.2.2":
   "integrity" "sha512-EkHtxMkWMnuB7PzvC/OgAN27P7OqC2ephS97rWrXDeWmuzQ2sPPMT8mVlo/X6U5Z/oXpWYwh59GB5qPnJc0GgQ=="
   "resolved" "https://registry.npmjs.org/@expo-google-fonts/source-sans-pro/-/source-sans-pro-0.2.2.tgz"

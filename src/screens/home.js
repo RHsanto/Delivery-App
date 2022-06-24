@@ -2,6 +2,7 @@ import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet, View } from "re
 import Text from "../components/text/text";
 import { colors } from "../theme/color";
 import { spacing } from "../theme/spacing";
+import { typography } from "../theme/typography";
 
 
 export default function Home({navigation}){
@@ -60,9 +61,10 @@ const styles=StyleSheet.create({
   },
   logo:{
     color:colors.logoColor,
-    fontSize:34,
+    fontSize:36,
     textAlign:'center',
-    marginTop:spacing[4]
+    marginTop:spacing[4],
+    fontFamily:typography.logo
   
   },
   orderView:{ 
@@ -84,13 +86,15 @@ const styles=StyleSheet.create({
     color:colors.grey,
     textAlign:'center',
     marginTop:spacing[5],
-    marginHorizontal:spacing[5]
+    marginHorizontal:spacing[5],
+    lineHeight:25
   },
   orderBtn:{
     width:'90%',
     backgroundColor:colors.green,
     padding:spacing[5],
-    marginVertical:spacing[10],
+    marginTop:spacing[10],
+    marginBottom:spacing[6],
     textAlign:'center',
     borderRadius:10
  

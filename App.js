@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import {useFonts,SourceSansPro_600SemiBold,SourceSansPro_700Bold,} from '@expo-google-fonts/source-sans-pro';
+import { Lobster_400Regular } from '@expo-google-fonts/lobster';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Home from './src/screens/home';
@@ -15,6 +16,7 @@ export default function App() {
   let [fontsLoaded] = useFonts({
     SourceSansPro_600SemiBold,
     SourceSansPro_700Bold,
+    Lobster_400Regular,
   });
   if (!fontsLoaded) {
     return <Text>Font loading ....</Text>;
