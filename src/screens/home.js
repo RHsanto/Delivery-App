@@ -1,4 +1,4 @@
-import { Image, SafeAreaView, ScrollView, StyleSheet, View } from "react-native";
+import { Image, Pressable, SafeAreaView, ScrollView, StyleSheet, View } from "react-native";
 import Text from "../components/text/text";
 import { colors } from "../theme/color";
 import { spacing } from "../theme/spacing";
@@ -17,7 +17,17 @@ export default function Home(){
         </View>
         <Text preset="h1"> Non-Contact </Text>
         <Text preset="h1">Deliveries</Text>
+        <Text preset="small" style={styles.description}>When placing an order, select the option “Contactless delivery” and the courier will leave your order at the door.
+       </Text>
+       
+         {/* button  */}
+    <View style={styles.orderBtn}>
+    <Pressable >
+        <Text preset="h4" style={{color:colors.white,textAlign:'center'}}>order now</Text>
+    </Pressable>
     </View>
+    </View>
+     
      </View>
  {/* order delivery section */}
   
@@ -60,5 +70,20 @@ const styles=StyleSheet.create({
     width: 100,
     height: 100,
     borderRadius:'50%'
+  },
+  description:{
+    color:colors.grey,
+    textAlign:'center',
+    marginTop:spacing[5],
+    marginHorizontal:spacing[5]
+  },
+  orderBtn:{
+    width:'90%',
+    backgroundColor:colors.green,
+    padding:spacing[5],
+    marginTop:spacing[6],
+    textAlign:'center',
+    borderRadius:10
+ 
   }
 })
