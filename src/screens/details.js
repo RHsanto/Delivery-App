@@ -13,7 +13,7 @@ export default function Details(){
     
 
     <View>
-     <Image style={{height:220}} source={require('../../assets/image/Media.jpg')} />
+     <Image style={{height:200}} source={require('../../assets/image/Media.jpg')} />
     <View style={styles.priceContainer}>
       <View style={styles.textView}>
       <Text preset="h2">Boston Lettuce</Text>
@@ -22,11 +22,13 @@ export default function Details(){
       <Text style={styles.currency}>€ / piece</Text>
       </View>
       <Text preset="h4" style={styles.subPRice}>~ 150 gr / piece</Text>
-      <Text>jhdopjoj</Text>
-      <Text>jhdopjoj</Text>
+      <Text preset="h3" style={{marginTop:spacing[5]}}>Spain</Text>
+      <Text preset="small" style={styles.description}>Lettuce is an annual plant of the daisy family, Asteraceae. It is most often grown as a leaf vegetable, but sometimes for its stem and seeds. Lettuce is most often used for salads, although it is also seen in other kinds of food, such as soups, sandwiches and wraps; it can also be grilled.</Text>
       </View>
       
+  {/* cart section */}
     </View>
+
     </View>
 
 
@@ -65,5 +67,12 @@ paddingHorizontal:spacing[6]
   subPRice:{
     color:'#06BE77',
     paddingVertical:spacing[2]
+  },
+  description:{
+    color:colors.grey,
+    marginTop:spacing[3],
+    lineHeight:24,
+    
+
   }
 })
