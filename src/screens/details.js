@@ -29,12 +29,21 @@ export default function Details(){
 {/*start cart view */}
     <View style={styles.cartView}>
       <View style={styles.loveBtn}>
-        <AntDesign name="hearto" size={20} style={{color:colors.grey}}/>
-    </View>
-      <View style={styles.cartBtn}>
+       <Pressable onPress={()=>{
+        alert('Love')
+       }}
+       >
+       <AntDesign name="hearto" size={20} style={{color:colors.grey}}/>
+       </Pressable>
+     </View>
+      <View>
+        <Pressable style={styles.cartBtn} onPress={()=>{
+          alert('function not add')
+        }}>
         <AntDesign name="shoppingcart" size={20} color="white" />
         <Text preset="h4" style={{color:colors.white, textTransform: 'uppercase',marginLeft:15}}>add to cart</Text>
-        </View>
+        </Pressable>
+      </View>
     </View>
  
 {/* end price container */}
@@ -101,7 +110,7 @@ const styles =StyleSheet.create({
   cartBtn:{
   backgroundColor:colors.green,
   padding:spacing[5],
-  width:'75%',
+  width:'100%',
   flexDirection:'row',
   justifyContent:'center',
   alignItems:'center',
