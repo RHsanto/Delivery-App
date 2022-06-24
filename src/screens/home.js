@@ -12,15 +12,11 @@ export default function Home(){
       <View style={styles.container}>
        <View style={styles.logoView}><Text style={styles.logo}>D</Text></View>
       <View style={styles.orderView}>
-        <Text preset="h3">
-        Hello World
-        </Text>
-        <Text preset="h3">
-        Hello World
-        </Text>
-        <Text preset="h3">
-        Hello World
-        </Text>
+        <View style={styles.imageView}>
+          <Image style={{marginHorizontal:spacing[8],marginVertical:spacing[7]}}  source={require('../../assets/image/Vector.jpg')} />
+        </View>
+        <Text preset="h1"> Non-Contact </Text>
+        <Text preset="h1">Deliveries</Text>
     </View>
      </View>
  {/* order delivery section */}
@@ -51,11 +47,18 @@ const styles=StyleSheet.create({
   
   },
   orderView:{ 
-    marginTop:spacing[8],
+    marginTop:spacing[5],
     backgroundColor:colors.deepWhite,
     borderTopLeftRadius:30,
     borderTopRightRadius:30,
     justifyContent: 'center',
     alignItems:'center'
+  },
+  imageView:{
+    marginTop:spacing[5],
+    backgroundColor:colors.white,
+    width: 100,
+    height: 100,
+    borderRadius:'50%'
   }
 })
