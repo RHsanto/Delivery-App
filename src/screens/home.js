@@ -15,7 +15,7 @@ export default function Home({navigation}){
       </View>
       <View style={styles.orderView}>
         <View style={styles.imageView}>
-          <Image style={{marginHorizontal:spacing[8],marginVertical:spacing[7]}}  source={require('../../assets/image/Vector.jpg')} />
+          <Image   source={require('../../assets/image/Vector.jpg')} />
         </View>
         <Text preset="h1"> Non-Contact </Text>
         <Text preset="h1">Deliveries</Text>
@@ -58,17 +58,19 @@ const styles=StyleSheet.create({
    borderRadius:50,
    width: 70,
    height: 70,
+   justifyContent:'center',
+   alignItems:'center',
   },
+  
   logo:{
     color:colors.logoColor,
     fontSize:36,
     textAlign:'center',
-    marginTop:spacing[4],
     fontFamily:typography.logo
   
   },
   orderView:{ 
-    marginTop:spacing[10],
+    marginTop:spacing[5],
     backgroundColor:colors.deepWhite,
     borderTopLeftRadius:30,
     borderTopRightRadius:30,
@@ -77,10 +79,13 @@ const styles=StyleSheet.create({
   },
   imageView:{
     marginTop:spacing[5],
+    marginBottom:spacing[5],
     backgroundColor:colors.white,
     width: 100,
     height: 100,
-    borderRadius:'50%'
+    borderRadius:'50%',
+    justifyContent:'center',
+    alignItems:'center'
   },
   description:{
     color:colors.grey,
