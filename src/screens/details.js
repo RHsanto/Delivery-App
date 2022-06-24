@@ -100,7 +100,7 @@ const styles =StyleSheet.create({
    marginTop:spacing[4],
    textAlign:'center',
    alignItems:'center',
-   padding:20,
+   padding:spacing[5],
  
   },
   loveBtn:{
